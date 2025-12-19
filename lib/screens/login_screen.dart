@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'register_screen.dart';
 
 import 'package:habitsapp/animations/login_animation.dart';
+import 'package:habitsapp/screens/to_do_screen.dart';
 //import 'package:habitsapp/animations/hiWelcomeAnimation.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -28,6 +29,9 @@ class LoginPage extends State<LoginScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Login Successful")),
       );
+
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => ToDoScreen()));
     } on FirebaseAuthException catch (err) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text("Login Failure \n ${err.message}")),
