@@ -4,7 +4,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:intl/intl.dart';
 import 'package:habitsapp/screens/add_meetings_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Meetings extends StatefulWidget {
   const Meetings({super.key});
