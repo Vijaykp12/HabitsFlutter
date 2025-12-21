@@ -99,7 +99,7 @@ class AddTodo extends State<AddTodoScreen> {
   @override
   Widget build(BuildContext context) {
     // Determine if we are on a wide screen (Web/Desktop) or Mobile
-    final isWideScreen = MediaQuery.of(context).size.width > 600;
+    //final isWideScreen = MediaQuery.of(context).size.width > 600;
 
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 255, 242, 239),

@@ -30,15 +30,6 @@ class _ScheduleDetailsDialogState extends State<ScheduleDetailsDialog> {
   late String _status;
 
   bool _isLoading = false;
-
-  final List<String> _types = [
-    'Learning',
-    'Project',
-    'Event',
-    'Meetup',
-    'Deep Work'
-  ];
-  final List<String> _priorities = ['High', 'Medium', 'Low'];
   final List<String> _statuses = [
     'upcoming',
     'ongoing',
